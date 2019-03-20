@@ -1,0 +1,117 @@
+﻿@model DAO.Polizas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="row">
+    <div class="col-sm-2">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.comprarmisoat.com/assets/img/axa_colpatria.png" width="100" height="100" alt="">
+        </a>
+    </div>
+    <div class="col-sm-10">
+        <h2>Eliminar Poliza</h2>
+
+        <h3>Esta seguro de eliminar esta poliza?</h3>
+        <div>
+
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombres)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombres)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Apellidos)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Apellidos)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TipoDocumento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TipoDocumento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NumeroDocumento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NumeroDocumento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Celular)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Direccion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TipoVehiculo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TipoVehiculo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PlacaVehiculo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PlacaVehiculo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaCompra)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaCompra)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                    @Html.ActionLink("Lista Poliza", "Index")
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
+
+
